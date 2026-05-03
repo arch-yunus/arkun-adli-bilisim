@@ -7,6 +7,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Field](https://img.shields.io/badge/field-Digital%20Forensics-red.svg)
 ![Focus](https://img.shields.io/badge/focus-Türkiye%20Özel-white.svg)
+![Status](https://img.shields.io/badge/status-Comprehensive-success.svg)
 
 ---
 
@@ -15,6 +16,31 @@
 **Arkun**, Türkiye'deki adli bilişim dünyasına (Digital Forensics) yönelik standartları, metodolojileri, araç setlerini ve hukuki süreçleri bir araya getiren kapsamlı bir açık kaynak bilgi deposudur. Türk mitolojisindeki "iz sürme" kavramından ilham alarak, dijital dünyada bırakılan kanıtların bilimsel ve hukuki çerçevede nasıl inceleneceğini rehber edinir.
 
 Bu repo, adli bilişim uzmanları, kolluk kuvvetleri, hukukçular ve siber güvenlik araştırmacıları için Türkiye mevzuatına (CMK 134 vb.) uyumlu bir yol haritası sunar.
+
+---
+
+## 🏗️ Proje Yapısı
+
+Repo, modüler ve kolay erişilebilir bir hiyerarşiyle yapılandırılmıştır:
+
+| Dizin | Açıklama |
+| :--- | :--- |
+| [📂 Methodology](Methodology/) | İş akışları, ilk müdahale kontrol listeleri ve metodolojiler. |
+| [📂 Legislation](Legislation/) | CMK 134, delil hukuku ve iştisat notları. |
+| [📂 Core-Areas](Core-Areas/) | Disk, Mobil, Bellek (RAM) ve Registry analizi teknikleri. |
+| [📂 Tools](Tools/) | Sektörde kullanılan temel araçların rehberleri. |
+| [📂 Templates](Templates/) | Adli rapor şablonları ve delil zinciri formları. |
+
+---
+
+## 🧠 Zihinsel Çerçeve (Arkun Mental Model)
+
+Adli bilişim sadece teknik bir süreç değil, aynı zamanda disiplinler arası bir mantık yürütme sanatıdır. Arkun, inceleme sırasında **OODA Döngüsü**'nü benimser:
+
+1.  **Gözlemle (Observe):** Olay yerini, uçuçu verileri ve fiziksel kanıtları tespit et.
+2.  **Yönlen (Orient):** Eldeki verileri Türkiye mevzuatı (CMK 134) ve teknik imkanlar ışığında değerlendir.
+3.  **Karar Ver (Decide):** İnceleme stratejini belirle (Hangi imaj formatı? Hangi analiz araçları?).
+4.  **Harekete Geç (Act):** İmajı al, analizi yap ve bilimsel temellere dayalı raporla.
 
 ---
 
@@ -29,8 +55,6 @@ Türkiye'de dijital delillerin toplanması ve değerlendirilmesi belirli kanunla
 ---
 
 ## 🔍 Temel Çalışma Alanları
-
-Repo aşağıdaki ana başlıklar altında yapılandırılmıştır:
 
 ### 1. Olay Yerine Müdahale (First Response)
 *   Canlı sistemlerde veri toplama (RAM Capture).
@@ -50,32 +74,27 @@ Repo aşağıdaki ana başlıklar altında yapılandırılmıştır:
 *   Volatility ve MemProcFS kullanımı.
 *   Zararlı yazılım izleri ve enjekte edilmiş kodların tespiti.
 
-### 5. Kayıt Defteri (Registry) ve Log Analizi
-*   Windows Registry üzerinden kullanıcı aktivitelerinin takibi.
-*   Event Log analizi ve zaman çizelgesi (Timeline) oluşturma.
-
 ---
 
-## 🛠️ Araç Seti (Toolbox)
+## 🛠️ Teknik Cephanelik (Technical Arsenal)
 
-Türkiye'de aktif kullanılan ve repoda kullanım rehberleri bulunan bazı araçlar:
-
-| Araç | Açıklama | Odak Alanı |
+| Araç | Odak Alanı | Açıklama |
 | :--- | :--- | :--- |
-| **Autopsy** | Açık kaynaklı grafik arayüzlü inceleme aracı. | Disk Analizi |
-| **FTK Imager** | İmaj alma ve önizleme. | Veri Toplama |
-| **Volatility** | Gelişmiş bellek analiz çatısı. | RAM |
-| **Magnet RAM Capture** | Hızlı RAM imajı alma. | Canlı Sistem |
-| **Wireshark** | Ağ trafiği analizi. | Network Forensics |
+| **Autopsy** | Disk Analizi | Açık kaynaklı grafik arayüzlü inceleme platformu. |
+| **FTK Imager** | Veri Toplama | İmaj alma, önizleme ve RAM dökümü. |
+| **Volatility 3** | RAM Analizi | Gelişmiş bellek analiz framework'ü. |
+| **Wireshark** | Network | Ağ trafiği ve paket analizi. |
+| **Magnet RAM Capture** | Canlı Sistem | Hızlı ve güvenli bellek kopyalama. |
 
 ---
 
-## 🚀 Metodoloji (Arkun Workflow)
+## 📅 Yapılacaklar (To-Do)
 
-1.  **Tanımlama:** Delil başlangıç noktalarının belirlenmesi.
-2.  **Koruma:** Hash değerlerinin alınması ve imaj oluşturma.
-3.  **Analiz:** Kanıtların ayıklanması ve anlamlandırılması.
-4.  **Sunum:** Bulguların teknik olmayan bir dille raporlanması.
+- [ ] Bulut Adli Bilişim (Cloud Forensics) bölümü ekle (AWS, Azure, Google Drive).
+- [ ] IoT Cihazlar (Akıllı ev sistemleri, Drone) için analiz rehberi hazırla.
+- [ ] Yapay Zeka destekli adli analiz araçlarını incele ve repoya ekle.
+- [ ] Türkiye özelindeki güncel Yargıtay iştisatlarını "Legislation" altına ekle.
+- [ ] Linux Adli Bilişim (Artifacts) rehberi oluştur.
 
 ---
 
