@@ -1,1 +1,0 @@
-﻿# arkun-adli-bilisim
