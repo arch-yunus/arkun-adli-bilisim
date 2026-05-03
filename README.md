@@ -98,6 +98,54 @@ Türkiye'de dijital delillerin toplanması ve değerlendirilmesi belirli kanunla
 
 ---
 
+## 🎯 Kullanım Senaryoları (Usage Scenarios)
+
+Arkun, aşağıdaki senaryolarda bir yol haritası ve teknik referans olarak kullanılabilir:
+
+*   **Adli Soruşturmalar:** Kolluk kuvvetleri için CMK 134 uyumlu veri toplama ve analiz süreçleri.
+*   **Kurumsal Olay Müdahalesi (DFIR):** Şirket içi veri sızdırma, yetkisiz erişim veya zararlı yazılım saldırılarının analizi.
+*   **Hukuki Bilirkişilik:** Hukukçular ve bilirkişiler için teknik bulguların hukuki zemine oturtulması.
+*   **Akademik Araştırma:** Adli bilişim öğrencileri için metodolojik kaynak ve araç kullanım rehberleri.
+
+---
+
+## 🔄 Detaylı Arkun İş Akışı (Detailed Workflow)
+
+| Aşama | Teknik Aksiyonlar | Hukuki/İdari Gereksinim |
+| :--- | :--- | :--- |
+| **Hazırlık** | Kitlerin sterilizasyonu, write-blocker kontrolü. | Görevlendirme yazısı / Arama kararı incelemesi. |
+| **Müdahale** | RAM Capture, uçucu ağ verilerinin kaydı. | Olay yeri fotoğraflama ve çevre güvenliği. |
+| **Elde Etme** | Bit-tabanlı imaj alma (E01), Hash hesaplama. | İmaj alma tutanağı ve şüpheliye kopya teslimi. |
+| **İnceleme** | Dosya kurtarma, Registry ve Log analizi. | Analiz adımlarının "Audit Log" şeklinde kaydı. |
+| **Raporlama** | Bulguların görselleştirilmesi ve teknik rapor. | Bilimsel mütalaa standartlarına uygunluk. |
+
+---
+
+## 📊 Adli Bilişim Eserleri (Artifacts) Hızlı Referans
+
+Sıkça incelenen Windows eserleri ve konumları:
+
+| Eser (Artifact) | Konum / Kaynak | Sağladığı Bilgi |
+| :--- | :--- | :--- |
+| **LNK Files** | `C:\Users\[User]\AppData\Roaming\Microsoft\Windows\Recent` | En son açılan dosya ve klasörlerin izleri. |
+| **Prefetch** | `C:\Windows\Prefetch` | Uygulamaların çalışma zamanı ve sıklığı. |
+| **Jump Lists** | `C:\Users\[User]\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations` | Görev çubuğuna sabitlenen veya sık kullanılan öğeler. |
+| **ShimCache** | `SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatCache` | Çalıştırılan executable dosyaların geçmişi. |
+| **Browser History** | `AppData\Local\Google\Chrome\User Data\Default\History` | Web gezinti geçmişi ve indirmeler. |
+
+---
+
+## ⚖️ Etik İlkeler ve Profesyonel Standartlar
+
+Adli bilişim uzmanı, inceleme sırasında aşağıdaki ilkelere sadık kalmalıdır:
+
+1.  **Tarafsızlık:** Veriler sadece olduğu gibi raporlanmalı, yorumlar somut delillere dayanmalıdır.
+2.  **Gizlilik:** İncelenen verilerdeki kişisel gizliliğe saygı duyulmalı, sadece vaka ile ilgili kısımlar raporlanmalıdır.
+3.  **Bütünlük:** Orijinal kanıt asla değiştirilmemeli, tüm işlemler kopya üzerinden yapılmalıdır.
+4.  **Yetkinlik:** Sadece uzmanlık alanına giren konularda görüş bildirilmeli, güncel teknolojiler takip edilmelidir.
+
+---
+
 ## 🤝 Katkıda Bulunma
 
 Arkun projesine katkıda bulunmak için:
